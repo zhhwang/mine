@@ -28,7 +28,7 @@ public class OutDataUtil {
     }
 
     /**
-     * 返回响应数据
+     * 返回响应数据http
      * 
      * @param response
      *            http响应

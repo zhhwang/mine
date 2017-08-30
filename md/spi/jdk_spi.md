@@ -48,3 +48,4 @@
     }
     ````
 5. META-INF/services/xxx.Search的services是根据java.util.ServiceLoader确定，dubbo定义了自己的ServiceLoader
+6. 缺点：一次性实例化扩展点所有实现，耗费时间和内存资源；扩展点加载失败时无法获取扩展点名称
