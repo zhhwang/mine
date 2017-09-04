@@ -1,6 +1,7 @@
-package com.botany.mint.design.decorator;
+package com.botany.mint.design.decorator.factory;
 
-import com.botany.mint.design.decorator.filter.EmptyFilter;
+import com.botany.mint.design.decorator.filter.StringFilter;
+import com.botany.mint.design.decorator.filter.impl.EmptyFilter;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 

@@ -1,4 +1,4 @@
-package com.botany.mint.design.decorator;
+package com.botany.mint.design.decorator.filter;
 
 public abstract class AbstractStringFilter implements StringFilter {
     private StringFilter stringFilter;
