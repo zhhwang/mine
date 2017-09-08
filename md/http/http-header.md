@@ -52,3 +52,42 @@
  7. 214， Transformation applied (使用了转换，代理对内容编码或媒体类型等执行了某些处理)
  8. 299， Miscellaneous persistent warning (持久杂项警告，任意的警告内容)
  ### 请求首部字段
+ 
+#####Accept:通知服务器用户代理能够处理的媒体类型及媒体类型的相对优先级
+1. 文本文件： text/html, text/plain, text/css, application/xhtml+xml, application/xml...
+2. 图片文件： image/jpeg, image/gif, image/png...
+3. 视频文件： video/mpeg, video/quicktime...
+4. 应用程序使用的二进制文件：application/octet-stream, application/zip...
+5. 举例：Accept: text/plain; q=0.3, text/htm
+#####Accept-Charset:通知服务器用户代理支持的字符集及字符集的相对有限顺序
+1. iso-8859-5
+2. unicode-1-1; q=0.8
+
+#####Accept-Encoding:通知服务器用户代理支持的内容编码及内容编码的优先级顺序
+1. gzip： Lempel-Ziv算法及32位循环冗余校验
+2. compress： UNIX文件压缩程序，Lempel-Ziv-Welch算法
+3. deflate： zlib格式和deflate算法
+4. identity： 不执行压缩或不会变化的默认编码格式
+
+#####Accept-Language:通知服务器用户代理能够处理的自然语言集
+1. 举例： Accept-Language: zh-cn,zh;q=0.7, en-us,en;q=0.3
+
+#####Authorization:通知服务器用户代理的认证信息（证书值）
+
+#####Expect：通知服务器出现某种特定行为，无法理解是返回417
+1. 100-continue：等待状态码100响应的客户端在发生请求时，需要指定该值
+
+#####From:通知服务器用户代理的电子邮件地址
+1. 使用代理时，应尽可能包含From首部字段
+
+#####Host：通知服务器请求的资源所处的互联网主机名和端口号
+
+#####If-Match:只有If-Match的字段值跟ETag值匹配一致时，服务器才会接受请求
+1. 实体标记（ETag）是与特定资源关联的确定值。资源更新后ETag也会随之更新
+2. 匹配失败返回状态码412
+
+#####If-Modified-Since：如果在该字段指定的日期时间后，资源发生了更新，服务器会接受请求
+
+#####If-None-Match:只有该字段值与ETag值不一致时，可处理该请求。
+
+#####If-Range
