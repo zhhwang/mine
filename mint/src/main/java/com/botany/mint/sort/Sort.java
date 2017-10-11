@@ -4,9 +4,9 @@ public class Sort {
 
     // 交换排序之冒泡排序，第一遍排序把最小值放在unsorted[0]
     public static void bubble_sort(int[] unsorted) {
-        for (int i = 0; i < unsorted.length; i++) {
-            for (int j = i; j < unsorted.length; j++) {
-                if (i > j) {
+        for (int i = 0; i < unsorted.length - 1; i++) {
+            for (int j = 0; j < unsorted.length - i - 1; j++) {
+                if (unsorted[i] > unsorted[j]) {
                     int temp = unsorted[i];
                     unsorted[i] = unsorted[j];
                     unsorted[j] = temp;
@@ -53,4 +53,29 @@ public class Sort {
         quick_sort(a, left, i - 1); // 左半边
         quick_sort(a, j + 1, right); // 右半边
     }
+
+    // 插入排序之直接插入排序
+    public static void insert_sort(int[] a) {
+        for (int i = 1; i < a.length; i ++) {
+            if (a[i] < a[i - 1]) {
+                int j = i - 1;
+                int x = a[i];
+                a[i] = a[i - 1];
+                while (x < a[j]) {
+                    a[j + 1] = a[j];
+                    j--;
+                }
+                a[j+1] = x;
+            }
+        }
+    }
+    // 插入排序之希尔排序
+
+    // 选择排序之简单选择排序
+
+    // 选择排序之堆排序
+
+    // 归并排序
+
+    // 基数排序
 }
