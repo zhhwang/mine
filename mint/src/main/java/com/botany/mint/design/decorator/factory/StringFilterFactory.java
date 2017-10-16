@@ -8,6 +8,12 @@ import org.apache.commons.logging.LogFactory;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * demo class
+ *
+ * @author wangzh
+ * @date 2017/10/16
+ */
 public class StringFilterFactory {
     private static final Log log = LogFactory.getLog(StringFilterFactory.class);
 
@@ -23,7 +29,9 @@ public class StringFilterFactory {
         return stringFilterFactory;
     }
 
-    //通过一个以逗号分割的过滤器引用名串，获取过滤器
+    /**
+     * 通过一个以逗号分割的过滤器引用名串，获取过滤器
+     */
     public StringFilter getStringFilterChain(String chain) {
         if (chain == null || chain.length() == 0) {
             return new EmptyFilter();
