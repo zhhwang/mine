@@ -1,4 +1,4 @@
-package com.botany.mint.design.decorator.command;
+package com.botany.mint.design.command;
 
 /**
  * Created by Administrator on 2017/10/16 0016.

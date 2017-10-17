@@ -1,4 +1,4 @@
-package com.botany.mint.design.decorator.command;
+package com.botany.mint.design.command;
 
 /**
  * 1. 比较容易升级一个命令队列，

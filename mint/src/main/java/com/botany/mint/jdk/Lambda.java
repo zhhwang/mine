@@ -9,6 +9,7 @@ import java.util.concurrent.Callable;
 /**
  * 1. 函数式接口
  * 2. 匿名内部类
+ * 3. 可参考链接： http://www.cnblogs.com/franson-2016/p/5593080.html
  */
 public class Lambda {
     Callable<String> helloCallable (String name) {
@@ -20,7 +21,7 @@ public class Lambda {
         final int[] sum = {0};
         List<Long> list = new ArrayList();
         list.add(2L);
-        list.add(3l);
+        list.add(3L);
         list.forEach(e -> { sum[0] += e.intValue();});
         list.forEach(e -> { sum[0] += e.intValue();});
     }

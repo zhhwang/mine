@@ -1,4 +1,4 @@
-package com.botany.mint.design.decorator.command;
+package com.botany.mint.design.command;
 
 public abstract class Command {
 

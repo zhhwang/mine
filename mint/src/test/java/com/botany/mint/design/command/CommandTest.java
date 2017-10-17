@@ -1,8 +1,5 @@
 package com.botany.mint.design.command;
 
-import com.botany.mint.design.decorator.command.ConcreteCommand;
-import com.botany.mint.design.decorator.command.Invoker;
-import com.botany.mint.design.decorator.command.Receiver;
 import org.junit.Test;
 
 /**

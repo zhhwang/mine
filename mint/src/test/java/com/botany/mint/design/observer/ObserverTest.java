@@ -1,7 +1,5 @@
 package com.botany.mint.design.observer;
 
-import com.botany.mint.design.decorator.observer.ConcreteObserver;
-import com.botany.mint.design.decorator.observer.Subject;
 import org.junit.Before;
 
 /**

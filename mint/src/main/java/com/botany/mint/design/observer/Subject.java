@@ -1,4 +1,4 @@
-package com.botany.mint.design.decorator.observer;
+package com.botany.mint.design.observer;
 
 import java.util.ArrayList;
 import java.util.List;
