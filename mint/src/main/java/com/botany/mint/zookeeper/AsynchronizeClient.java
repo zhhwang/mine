@@ -2,13 +2,12 @@ package com.botany.mint.zookeeper;
 
 import org.apache.zookeeper.*;
 
-import java.io.IOException;
 import java.util.concurrent.CountDownLatch;
 
 /**
  * Created by wangzh on 17/10/19.
  */
-public class AsynchronizeWatcher implements Watcher{
+public class AsynchronizeClient implements Watcher{
   private static CountDownLatch connectedSemaphore = new CountDownLatch(1);
 
   public void create() throws Exception {
