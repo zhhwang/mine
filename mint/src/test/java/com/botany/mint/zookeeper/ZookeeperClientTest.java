@@ -32,8 +32,11 @@ public class ZookeeperClientTest implements Watcher{
             String path = "/zk-test-ephemeral";
             zk.create(path , "before".getBytes(), ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.EPHEMERAL);
 
+            // 检测点1
             zk.getData(path, new PathWatcher(), null);
-            zk.setData(path, "after".getBytes(), -1);
+            // 检测点2
+            zk.exists(path, new PathWatcher2());
+            zk.setData(path, "after2".getBytes(), -1);
 
             this.closeConnection();
         } catch (KeeperException e) {
@@ -64,7 +67,23 @@ public class ZookeeperClientTest implements Watcher{
         public void process(WatchedEvent watchedEvent) {
             try {
                 if (Event.EventType.NodeDataChanged == watchedEvent.getType()) {
-                    System.out.println("节点数据/zk-test-ephemeral更新为：" + new String(zk.getData("/zk-test-ephemeral", false, null)));
+                    System.out.println("检测点1：节点数据/zk-test-ephemeral更新为：" + new String(zk.getData("/zk-test-ephemeral", false, null)));
+                }
+            } catch (KeeperException e) {
+                e.printStackTrace();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+
+        }
+    }
+
+    class PathWatcher2 implements Watcher {
+        @Override
+        public void process(WatchedEvent watchedEvent) {
+            try {
+                if (Event.EventType.NodeDataChanged == watchedEvent.getType()) {
+                    System.out.println("检测点2：节点数据/zk-test-ephemeral更新为：" + new String(zk.getData("/zk-test-ephemeral", false, null)));
                 }
             } catch (KeeperException e) {
                 e.printStackTrace();

@@ -5,8 +5,17 @@ import org.I0Itec.zkclient.IZkDataListener;
 import org.I0Itec.zkclient.ZkClient;
 import org.apache.zookeeper.server.ServerConfig;
 
+import java.util.concurrent.locks.ReentrantLock;
+
 /**
- * Created by Administrator on 2017/10/20 0020.
+ *  101tec封装zookeeper
+ * <pre>
+ *     1、提供断链重连的特性
+ *     2、只向zookeeper注册一个默认的watcher， 封装自己的事件监控
+ *     3、捕捉并简化zookeeper繁多的exception
+ *     4、序列化
+ * </pre>
+ *
  */
 public class IOItecZookeeper {
 
