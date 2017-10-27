@@ -1,4 +1,4 @@
-package com.botany.mint.jdk;
+package com.botany.mint.jdk.lambda;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -7,9 +7,12 @@ import java.util.List;
 import java.util.concurrent.Callable;
 
 /**
- * 1. 函数式接口
- * 2. 匿名内部类
- * 3. 可参考链接： http://www.cnblogs.com/franson-2016/p/5593080.html
+ * <pre>
+ *     1. 函数式接口
+ *     2. 匿名内部类
+ *     3. 可参考链接： http://www.cnblogs.com/franson-2016/p/5593080.html
+ * </pre>
+ *
  */
 public class Lambda {
     Callable<String> helloCallable (String name) {
