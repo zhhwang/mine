@@ -1,5 +1,9 @@
 You should always knows the Truth.
 
+有空闲就多看下源码和开源项目吧
+1. https://github.com/pagehelper/Mybatis-PageHelper
+2. https://github.com/zhangkaitao/es JavaEE项目开发脚手架
+
 当你静下来时
 1. 体会身边的亲情关系，多久没跟亲人打电话了？
 2. 最近做了哪些事可以有更好的处理方式？
