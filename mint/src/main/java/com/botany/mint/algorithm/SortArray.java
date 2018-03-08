@@ -1,6 +1,6 @@
-package com.botany.mint.sort;
+package com.botany.mint.algorithm;
 
-public class Sort {
+public class SortArray {
 
     // 交换排序之冒泡排序，第一遍排序把最小值放在unsorted[0]
     public static void bubble_sort(int[] unsorted) {
