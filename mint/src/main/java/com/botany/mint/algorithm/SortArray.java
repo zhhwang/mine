@@ -2,14 +2,14 @@ package com.botany.mint.algorithm;
 
 public class SortArray {
 
-    // 交换排序之冒泡排序，第一遍排序把最小值放在unsorted[0]
+    // 交换排序之冒泡排序，最大值沉在底下，
     public static void bubble_sort(int[] unsorted) {
         for (int i = 0; i < unsorted.length - 1; i++) {
-            for (int j = 0; j < unsorted.length - i - 1; j++) {
-                if (unsorted[i] > unsorted[j]) {
-                    int temp = unsorted[i];
-                    unsorted[i] = unsorted[j];
-                    unsorted[j] = temp;
+            for (int j = 0; j < unsorted.length - i - 1; j++) { // 后面的数据先排好，每次都在第一个开始比较
+                if (unsorted[j] > unsorted[j+1]) {
+                    int temp = unsorted[j];
+                    unsorted[j] = unsorted[j+1];
+                    unsorted[j+1] = temp;
                 }
             }
         }
