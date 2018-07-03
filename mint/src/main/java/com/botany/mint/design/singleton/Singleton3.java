@@ -1,9 +1,13 @@
 package com.botany.mint.design.singleton;
 
 /**
- * Created by Administrator on 2017/10/19 0019.
+ * @author wangzh
  */
 public class Singleton3 {
+
+    /**
+     * getInstance方法第一次被调用的时候，instance实例被创建
+     */
     private static volatile Singleton3 instance = null;
 
     private Singleton3() {}

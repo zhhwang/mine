@@ -5,6 +5,9 @@ package com.botany.mint.design.singleton;
  */
 public class Singleton {
 
+    /**
+     * 类初始化的时候被创建
+     */
     private static final Singleton instance = new Singleton();
 
     /**
