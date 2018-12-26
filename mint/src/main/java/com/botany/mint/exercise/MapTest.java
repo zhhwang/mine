@@ -1,5 +1,6 @@
 package com.botany.mint.exercise;
 
+import javax.servlet.Filter;
 import java.math.BigInteger;
 import java.util.*;
 import java.util.concurrent.CopyOnWriteArrayList;
@@ -30,8 +31,7 @@ public class MapTest {
         Boolean.valueOf(true);
         BigInteger.valueOf(1); BigInteger.probablePrime(4, new Random());
         ThreadLocal<String> the;
-
-        LongUnaryOperator
+        Queue<String> queue = new LinkedList();
     }
 
     @Override

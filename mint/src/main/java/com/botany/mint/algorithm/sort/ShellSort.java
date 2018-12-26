@@ -15,17 +15,17 @@ public class ShellSort implements Sort{
     @Override
     public int[] sort(int[] unsorted) {
         //增量gap，并逐步缩小增量
-    for(int gap=unsorted.length/2;gap>0;gap/=2){
-    //从第gap个元素，逐个对其所在组进行直接插入排序操作
-    for(int i=gap;i<unsorted.length;i++){
-        int j = i;
-        while(j-gap>=0 && unsorted[j]<unsorted[j-gap]){
-                //插入排序采用交换法
-                swap(unsorted,j,j-gap);
-                j-=gap;
+    for(int gap = unsorted.length/2; gap > 0; gap /= 2){
+        //从第gap个元素，逐个对其所在组进行直接插入排序操作
+        for(int i=gap;i<unsorted.length;i++){
+            int j = i;
+            while(j-gap>=0 && unsorted[j]<unsorted[j-gap]){
+                    //插入排序采用交换法
+                    swap(unsorted,j,j-gap);
+                    j-=gap;
+                }
             }
         }
-    }
         return new int[0];
     }
 
