@@ -1,13 +1,14 @@
 package com.botany.mint.design.command;
 
 /**
- * Created by Administrator on 2017/10/16 0016.
+ * 具体命令类，真实场景会有多个具体命令类
  */
 public class ConcreteCommand extends Command {
 
     public ConcreteCommand (Receiver receiver) {
         super(receiver);
     }
+
     @Override
     public void executeCommand() {
         receiver.action();

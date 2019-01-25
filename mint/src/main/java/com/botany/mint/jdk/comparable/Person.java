@@ -1,5 +1,7 @@
 package com.botany.mint.jdk.comparable;
 
+import com.botany.mint.jdk.annontation.Author;
+
 /**
  * @author wangzh
  */
@@ -14,6 +16,7 @@ public class Person {
         this.age = age;
     }
 
+    @Author(name = "wangzhihui")
     public String getName() {
         return name;
     }

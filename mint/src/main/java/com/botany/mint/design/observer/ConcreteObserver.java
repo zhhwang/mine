@@ -1,7 +1,7 @@
 package com.botany.mint.design.observer;
 
 /**
- * Created by Administrator on 2017/10/16 0016.
+ * @author wangzh
  */
 public class ConcreteObserver implements IObserver {
     @Override

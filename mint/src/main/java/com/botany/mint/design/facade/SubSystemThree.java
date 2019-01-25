@@ -1,4 +1,4 @@
-package com.botany.mint.design.Facade;
+package com.botany.mint.design.facade;
 
 /**
  * @author wangzh

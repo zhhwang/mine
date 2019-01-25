@@ -1,4 +1,4 @@
-package com.botany.mint.exercice;
+package com.botany.mint.exercise;
 
 import java.util.Map;
 import java.util.Objects;
