@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        window.onload = function () {
+            var vue = new Vue({
+                el:"#app",
+                data:{
+                    msg:"Welcome vue",
+                    arr:["apple", "banana", "orange", "pear"],
+                    json:{a:"apple", b:"banana", c:"orange"}
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+    <div id="app">
+        <input v-model="msg">
+        <br/>
+        {{msg}}
+        <hr>
+        <ul>
+            <li v-for="value,index in arr">{{value}} {{index}}</li>
+        </ul>
+        <hr>
+        <ul>
+            <li v-for="(v, k, i) in json">{{v}} {{k}} {{i}}</li>
+        </ul>
+    </div>
+</body>
+</html>
