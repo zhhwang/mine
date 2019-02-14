@@ -4,6 +4,7 @@ package com.botany.mint.design.decorator;
  * @author wangzh
  */
 public class DecoratorPatternDemo {
+
     public static void main(String[] args) {
 
         Shape circle = new Circle();
